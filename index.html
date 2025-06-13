@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional LTNLIS website showcasing skills, projects, and experience.">
+    <meta name="keywords" content="cybersecurity, portfolio, penetration testing, ethical hacking, security research">
+    <title>LTNLIS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="loading-overlay" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <div class="bg-animation" id="bg-animation" aria-hidden="true"></div>
+    
+    <header role="banner">
+        <h1>@LTNLIS</h1>
+        <p class="subtitle">
+            <span id="typewriter"></span>
+            <span class="terminal-cursor" aria-hidden="true"></span>
+        </p>
+        <div class="section-underline"></div>
+    </header>
+    
+    <nav role="navigation" aria-label="Main Navigation">
+        <a href="#projects" aria-label="View my projects">Projects</a>
+        <a href="#skills" aria-label="View my skills">Skills</a>
+        <a href="#experience" aria-label="View my experience">Experience</a>
+        <a href="#education" aria-label="View my education">Education</a>
+        <a href="#blog" aria-label="View my blog">Blog</a>
+        <a href="#contact" aria-label="Contact me">Contact</a>
+    </nav>
+    
+    <main id="main-content" role="main">
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Featured Projects</h2>
+            <div class="section-underline"></div>
+            <div class="card-grid">
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Lock Icon">🔒</span>Advanced Penetration Testing Lab</h3>
+                    <p>Developed a comprehensive enterprise-grade home lab environment for ethical hacking and security testing. Implemented complex attack vectors, defense mechanisms, and automated threat simulation using industry-standard tools and advanced methodologies.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Kali Linux</span>
+                        <span class="tech-tag">Metasploit Pro</span>
+                        <span class="tech-tag">Nmap</span>
+                        <span class="tech-tag">Wireshark</span>
+                        <span class="tech-tag">VMware vSphere</span>
+                        <span class="tech-tag">Cobalt Strike</span>
+                    </div>
+                </div>
+                
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Shield Icon">🛡️</span>Zero-Trust Web Application</h3>
+                    <p>Architected and built a secure web application following OWASP Top 10 guidelines and zero-trust principles. Implemented comprehensive security measures including multi-factor authentication, end-to-end encryption, and advanced threat detection.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">OAuth 2.0</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                </div>
+                
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Magnifying Glass Icon">🔍</span>AI-Powered Security Monitor</h3>
+                    <p>Developed an intelligent real-time network monitoring system using machine learning to detect anomalous activities and zero-day threats. Features behavioral analysis, automated incident response, and predictive threat modeling.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Scapy</span>
+                        <span class="tech-tag">ELK Stack</span>
+                        <span class="tech-tag">Docker Swarm</span>
+                        <span class="tech-tag">Kafka</span>
+                    </div>
+                </div>
+                
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Padlock Icon">🔐</span>Quantum-Safe Cryptography Suite</h3>
+                    <p>Created a next-generation cryptography toolkit implementing post-quantum algorithms and hybrid encryption schemes. Includes quantum-resistant key exchange, digital signatures, and secure communication protocols.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">OpenSSL</span>
+                        <span class="tech-tag">CRYSTALS-Kyber</span>
+                        <span class="tech-tag">CRYSTALS-Dilithium</span>
+                        <span class="tech-tag">libOQS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Technical Expertise</h2>
+            <div class="section-underline"></div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><span role="img" aria-label="Lock Icon">🔒</span> Advanced Security Testing</h3>
+                    <ul class="skill-list">
+                        <li>Red Team Operations</li>
+                        <li>Advanced Persistent Threat (APT) Simulation</li>
+                        <li>Zero-Day Vulnerability Research</li>
+                        <li>Cloud Security Assessment (AWS/Azure/GCP)</li>
+                        <li>Mobile Application Security Testing</li>
+                        <li>IoT/Embedded Systems Security</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><span role="img" aria-label="Tools Icon">🛠️</span> Professional Tools & Platforms</h3>
+                    <ul class="skill-list">
+                        <li>Cobalt Strike / Empire Framework</li>
+                        <li>Burp Suite Professional / OWASP ZAP</li>
+                        <li>Nessus Pro / Qualys VMDR</li>
+                        <li>Splunk Enterprise / IBM QRadar</li>
+                        <li>CrowdStrike Falcon / SentinelOne</li>
+                        <li>HashiCorp Vault / AWS KMS</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><span role="img" aria-label="Laptop Icon">💻</span> Development & Automation</h3>
+                    <ul class="skill-list">
+                        <li>Python (Security Automation & ML)</li>
+                        <li>Go (Cloud-Native Security Tools)</li>
+                        <li>Rust (Systems Security)</li>
+                        <li>PowerShell & Bash Scripting</li>
+                        <li>Infrastructure as Code (Terraform)</li>
+                        <li>DevSecOps Pipeline Integration</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><span role="img" aria-label="Globe Icon">🌐</span> Infrastructure & Cloud Security</h3>
+                    <ul class="skill-list">
+                        <li>Zero Trust Architecture Design</li>
+                        <li>Kubernetes Security Hardening</li>
+                        <li>Cloud Security Posture Management</li>
+                        <li>Network Segmentation & Micro-segmentation</li>
+                        <li>Security Orchestration (SOAR)</li>
+                        <li>Threat Intelligence Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Professional Experience</h2>
+            <div class="section-underline"></div>
+            <div class="card-grid">
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Building Icon">🏢</span>Senior Security Analyst</h3>
+                    <p><strong>CyberGuard Solutions</strong> • 2024 - Present</p>
+                    <p>Lead security operations for enterprise clients, conducting advanced threat hunting, incident response, and vulnerability management. Spearheaded implementation of AI-driven security analytics platform, reducing false positives by 60% and improving threat detection capabilities.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Splunk SIEM</span>
+                        <span class="tech-tag">CrowdStrike EDR</span>
+                        <span class="tech-tag">Threat Hunting</span>
+                        <span class="tech-tag">MITRE ATT&CK</span>
+                    </div>
+                </div>
+                
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Lock Icon">🔒</span>Cybersecurity Research Lead</h3>
+                    <p><strong>XYZ University Security Lab</strong> • 2023-2024</p>
+                    <p>Led cutting-edge research initiatives in quantum cryptography, AI-powered threat detection, and IoT security frameworks. Published 5 peer-reviewed papers and presented findings at DEF CON and Black Hat conferences. Secured $150K in research grants for next-generation security projects.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Quantum Computing</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">IoT Security</span>
+                        <span class="tech-tag">Academic Research</span>
+                    </div>
+                </div>
+                
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Lightning Bolt Icon">⚡</span>Red Team Specialist</h3>
+                    <p><strong>SecureOps Consulting</strong> • Summer 2023</p>
+                    <p>Executed sophisticated penetration testing engagements against Fortune 500 companies. Specialized in advanced persistent threat simulations, social engineering campaigns, and zero-day exploit development. Achieved 95% success rate in bypassing enterprise security controls.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Red Team Operations</span>
+                        <span class="tech-tag">Social Engineering</span>
+                        <span class="tech-tag">Exploit Development</span>
+                        <span class="tech-tag">APT Simulation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education" aria-labelledby="education-heading">
+            <h2 id="education-heading">Education & Certifications</h2>
+            <div class="section-underline"></div>
+            <div class="card-grid">
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Graduation Cap Icon">🎓</span>Master of Science in Cybersecurity</h3>
+                    <p><strong>XYZ University</strong> • Expected 2025</p>
+                    <p>Advanced program specializing in quantum cryptography, AI security, and advanced persistent threat analysis. Thesis: "Machine Learning Approaches to Zero-Day Vulnerability Detection in IoT Ecosystems." Magna Cum Laude with 3.9 GPA.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Quantum Cryptography</span>
+                        <span class="tech-tag">AI Security</span>
+                        <span class="tech-tag">Research</span>
+                    </div>
+                </div>
+                
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Scroll Icon">📜</span>Professional Certifications</h3>
+                    <p><strong>Current & Pursuing:</strong></p>
+                    <div style="margin-top: 1.5rem;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem; color: #00ff88;">
+                            <span style="margin-right: 0.5rem;" role="img" aria-label="Checkmark">✓</span>
+                            <span>Certified Ethical Hacker (CEH) - Master Level</span>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem; color: #00ff88;">
+                            <span style="margin-right: 0.5rem;" role="img" aria-label="Checkmark">✓</span>
+                            <span>OSCP - Offensive Security Certified Professional</span>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem; color: #00d4ff;">
+                            <span style="margin-right: 0.5rem;" role="img" aria-label="Hourglass">⏳</span>
+                            <span>CISSP - Certified Information Systems Security Professional</span>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem; color: #00d4ff;">
+                            <span style="margin-right: 0.5rem;" role="img" aria-label="Hourglass">⏳</span>
+                            <span>GCIH - GIAC Certified Incident Handler</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Ethical Hacking</span>
+                        <span class="tech-tag">Penetration Testing</span>
+                        <span class="tech-tag">Incident Response</span>
+                        <span class="tech-tag">Security Management</span>
+                    </div>
+                </div>
+                
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Trophy Icon">🏆</span>Achievements & Recognition</h3>
+                    <p><strong>Notable Accomplishments:</strong></p>
+                    <ul style="margin-top: 1.5rem; color: #c0c7d1; list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 1rem;"><span role="img" aria-label="First Place Medal">🥇</span> 1st Place - National Cybersecurity Competition 2024</li>
+                        <li style="margin-bottom: 1rem;"><span role="img" aria-label="Microscope">🔬</span> 5 Published Research Papers in Top Security Journals</li>
+                        <li style="margin-bottom: 1rem;"><span role="img" aria-label="Microphone">🎤</span> Speaker at DEF CON 31 & Black Hat USA 2024</li>
+                        <li style="margin-bottom: 1rem;"><span role="img" aria-label="Money Bag">💰</span> $150K Research Grant Recipient</li>
+                        <li style="margin-bottom: 1rem;"><span role="img" aria-label="Medal">🏅</span> Dean's List - All Semesters</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <div class="section-underline"></div>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon" role="img" aria-label="Email Icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:security@example.com" aria-label="Email me at security@example.com">security@example.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon" role="img" aria-label="LinkedIn Icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/cybersec-pro" target="_blank" rel="noopener noreferrer" aria-label="View my LinkedIn profile">linkedin.com/in/cybersec-pro</a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon" role="img" aria-label="GitHub Icon">💻</div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/cybersec-expert" target="_blank" rel="noopener noreferrer" aria-label="View my GitHub profile">github.com/cybersec-expert</a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon" role="img" aria-label="Link Icon">🔗</div>
+                    <h3>Portfolio</h3>
+                    <a href="https://cybersecurity-portfolio.dev" target="_blank" rel="noopener noreferrer" aria-label="View my portfolio website">cybersecurity-portfolio.dev</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" aria-labelledby="blog-heading">
+            <h2 id="blog-heading">From the Blog</h2>
+            <div class="section-underline"></div>
+            <div class="card-grid">
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Article Icon">📝</span>The Art of Deception: Advanced Honeypot Strategies</h3>
+                    <p>An in-depth look at creating and deploying high-interaction honeypots to trap and analyze advanced persistent threats (APTs). Learn how to build a convincing digital mirage that wastes attacker time and resources while providing invaluable threat intelligence.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Honeypots</span>
+                        <span class="tech-tag">Deception Technology</span>
+                        <span class="tech-tag">Threat Intelligence</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Brain Icon">🧠</span>AI in Cybersecurity: Beyond the Hype</h3>
+                    <p>Everyone's talking about AI, but what are the real-world applications in cybersecurity? This post cuts through the noise to explore practical use cases for machine learning in threat detection, vulnerability management, and automated incident response.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Artificial Intelligence</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Threat Detection</span>
+                        <span class="tech-tag">SOAR</span>
+                    </div>
+                </div>
+                <div class="card" tabindex="0">
+                    <h3><span class="card-icon" role="img" aria-label="Quantum Icon">⚛️</span>Preparing for Q-Day: A CISO's Guide to Quantum-Resistant Cryptography</h3>
+                    <p>The quantum apocalypse is coming for our encryption. Are you ready? This article provides a strategic roadmap for CISOs to begin the transition to post-quantum cryptography, including risk assessment, algorithm selection, and implementation planning.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Quantum Computing</span>
+                        <span class="tech-tag">Cryptography</span>
+                        <span class="tech-tag">PQC</span>
+                        <span class="tech-tag">Risk Management</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>&copy; 2025 LTNLIS. All rights reserved. • Securing the digital frontier</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
