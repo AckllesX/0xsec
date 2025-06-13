@@ -222,6 +222,39 @@ window.addEventListener('scroll', () => {
     bg.style.transform = `translateY(${scrolled * 0.1}px)`;
 });
 
+document.getElementById("generate-preview").addEventListener("click", async () => {
+    const url = document.getElementById("link-input").value;
+    const preview = await fetchLinkPreview(url);
+    displayPreview(preview);
+});
+
+async function fetchLinkPreview(url) {
+    const apiKey = "a328961f9b29818a71b89bd59a84005a";
+    const response = await fetch(`https://api.linkpreview.net/?key=${apiKey}&q=${encodeURIComponent(url)}`);
+    const data = await response.json();
+    return data;
+}
+
+function displayPreview(data) {
+    const container = document.getElementById("link-preview-container");
+    container.innerHTML = `
+        <div style="
+            border: 1px solid #444; 
+            border-radius: 10px; 
+            padding: 15px; 
+            background: #222; 
+            color: white; 
+            max-width: 500px;
+            margin-top: 20px;">
+            <img src="${data.image}" alt="Thumbnail" style="width:100%; border-radius: 8px;" />
+            <h3>${data.title}</h3>
+            <p>${data.description}</p>
+            <a href="${data.url}" target="_blank" style="color: #00d4ff;">${data.url}</a>
+        </div>
+    `;
+}
+
+
 // Add keyboard navigation
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
