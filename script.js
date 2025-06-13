@@ -110,7 +110,7 @@ function initCardEffects() {
     document.querySelectorAll('.card').forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-15px) rotateX(5deg)';
-            this.style.boxShadow = '0 25px 50px rgba(0, 255, 136, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.1)';
+            this.style.boxShadow = '0 25px 50px rgba(255, 153, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.1)';
         });
         
         card.addEventListener('mouseleave', function() {
@@ -156,13 +156,13 @@ function initLoadingScreen() {
 function initTechTagEffects() {
     document.querySelectorAll('.tech-tag').forEach(tag => {
         tag.addEventListener('mouseenter', function() {
-            this.style.background = 'rgba(0, 255, 136, 0.25)';
+            this.style.background = 'rgba(255, 153, 0, 0.25)';
             this.style.transform = 'translateY(-3px) scale(1.05)';
-            this.style.boxShadow = '0 8px 25px rgba(0, 255, 136, 0.3)';
+            this.style.boxShadow = '0 8px 25px rgba(255, 153, 0, 0.3)';
         });
         
         tag.addEventListener('mouseleave', function() {
-            this.style.background = 'rgba(0, 255, 136, 0.15)';
+            this.style.background = 'rgba(255, 153, 0, 0.15)';
             this.style.transform = 'translateY(0) scale(1)';
             this.style.boxShadow = 'none';
         });
